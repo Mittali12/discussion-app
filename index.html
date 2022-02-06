@@ -1,0 +1,63 @@
+<link rel="stylesheet" href="index.css" />
+<link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<body>
+  <div id="head">Discussion Portal</div>
+
+  <div id="cont">
+    <div id="left_pane">
+      <div class="container">
+        <button class="btn btn-primary" id="new_que">New Question Form</button>
+        <input type="text" placeholder="Search questions..." id="search" />
+      </div>
+
+      <div id="que_box"></div>
+    </div>
+    <div id="right_pane1">
+      <h1>Welcome To Discussion Portal !</h1>
+      <p>Enter a subject and a question to get started</p>
+
+      <input
+        type="text"
+        placeholder="Subject"
+        id="sub"
+        style="width: 35%; padding: 4px 10px"
+      /><br />
+      <textarea placeholder="Question" id="question"></textarea><br />
+
+      <button class="btn btn-primary" id="submit">Submit</button>
+    </div>
+
+    <div id="right_pane2">
+      <h3>Question</h3>
+      <div id="right_que">
+        <h4 id="que_h"></h4>
+        <p id="que_t"></p>
+      </div>
+      <button class="btn btn-primary" id="resolve">Resolve</button><br /><br />
+
+      <h4>Response</h4>
+      <div id="answer_box"></div>
+      <br /><br />
+
+      <h3>Add Response</h3>
+      <input
+        type="text"
+        placeholder="Enter Name"
+        id="name"
+        style="width: 35%; padding: 4px 10px"
+      /><br />
+      <textarea placeholder="Enter Comment" id="comment"></textarea><br />
+
+      <button class="btn btn-primary" id="ans_submit">Submit</button>
+    </div>
+  </div>
+</body>
+
+<script src="index.js"></script>
